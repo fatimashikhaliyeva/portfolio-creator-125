@@ -1,0 +1,80 @@
+/*
+
+------1------ header------
+------2------ section-----
+
+
+
+
+
+*/
+
+:root {
+ --primary-black:#000; 
+
+
+}
+
+
+
+@import url(./reset.css);
+@import url(@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'););
+
+
+a {
+    text-decoration: none; /*butun a-larin rengini qara vermek ucundur*/
+}
+html{
+    font-size: 16px ;
+}
+.fa-bars {
+    display: none;
+}
+
+ body {
+    font-family: 'Roboto', sans-serif;
+
+}   
+header{
+    display: flex;
+    /*flex-direction: row;*//*istiqameti mueyyenlesdirir:justify-content: align-items*/
+   /* flex-direction-row-setir uzre yigir,row-reverse-setri tersine cevirir,column-alt-alta getirir,column-reverse-sayti bas ayaq edir. hal hazirda flex-directiondan istifade etmeyimize ehtiyac yoxdur cunki displayi rowdur*/
+    justify-content: space-between; /*kodu soldan saga dogru nizamlayacaq,space-arround versek etrafdan mueyyen qeder bosluqlar verecek,space-evenly versek cox az ferqle yene bosluq verecek,center merkeze dasiyir elementleri*/
+    align-items:center; /* cross axis y oxu eger 27ci setri row vermeseydik 29cu setre esasen soldan saga dogru cekecekdi.yeni onun isi 27ci setre esaslanir.displayde row oldugu ucun 27ci setri komente atiriq  */
+    padding-top:  41px; 
+    padding-left: 7.03rem;  /*112.5px-i reme kecirmek ucun 16px-ye boluruk=7.03rem*/
+    padding-right: 7.03rem;  
+
+
+} 
+
+
+
+header .nav-links a {
+    color:var(--primary-black); /*bu setri yazmagin sebebi backgroundun qara olmagindan basqaki hallarinda rengi black verecek,14cu setrde umumi verilib eger bu 36ci setr verilmeseydi arxa fonu black olsa linkler gorunmeyecekdi sehifede*/
+   font-style:;
+}
+
+ /*media mobil cihazlar ucun interfeysi yaratmaq ucundur */
+
+ @media (max-width:900px){
+
+    header {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+
+
+
+   /*child selector*/
+    header > nav{
+        display: none;
+        
+    }
+    .fa-bars{
+        display:flex ;
+    }
+ }
+ 
+    
