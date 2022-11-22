@@ -15,7 +15,7 @@
 
 }
 *{
-   outline: 1px solid red    /*saytdaki surusmeleri ve onlari neyin yaratdigini teyin etmek ucun istifade edilir*/
+   /*outline: 1px solid red */   /*saytdaki surusmeleri ve onlari neyin yaratdigini teyin etmek ucun istifade edilir*/
 }
 
 
@@ -59,7 +59,9 @@ header .nav-links a {
 
  /*media mobil cihazlar ucun interfeysi yaratmaq ucundur */
 
- @media (max-width:900px){
+ @media (max-width:900px)   /*2 deyeri masaustunde alt-alta almaq ucun mediadan istifade etdik*/
+ 
+ {
 
     header {
         padding-left: 22px;
@@ -85,9 +87,18 @@ header .nav-links a {
     padding-left: 112.5px;
     padding-right: 112.5px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  /*2 dene element min olcuye catanda kicilmeye icaze vermir,wrap edir ve alta atir */
 } 
  
+ 
+.introduction button{
+    background-color: #000;
+    color: #FFF;
+    padding: 17px;
+    width: 151px;
+    height: 58px;
+
+}
  
  
  .intro-left-side
