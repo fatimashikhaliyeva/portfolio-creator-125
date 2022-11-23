@@ -31,6 +31,7 @@ html{
 }
 .fa-bars {
     display: none;
+    cursor: pointer;
 }
 
  body {
@@ -100,7 +101,10 @@ header .nav-links a {
 
 }
  
- 
+   .introduction a{
+    color: #000;
+   }
+
  .intro-left-side
 
 {
@@ -175,3 +179,40 @@ body{
     overflow-x: hidden;
 }
 
+.trusted-by-section h6{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color:#000;
+    ;
+    
+}
+.trusted-by-companies
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.trusted-by-company
+{
+     transform: scale(1.2);  /*elementi yoxa cixarir */
+    transition: .8s ease-in;
+}
+
+@media(max-width:768px) and (min-width:576px)
+{
+    .trusted-by-company:nth-child(odd)
+    {
+        display: none;
+    }
+    
+}
+
+@media (max-width:575px) 
+{
+    .trusted-by-company:not(:first-child) {
+        display: none;
+       
+    }
+}
